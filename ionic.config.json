@@ -1,7 +1,0 @@
-{
-  "name": "skeleton-loader-4",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
