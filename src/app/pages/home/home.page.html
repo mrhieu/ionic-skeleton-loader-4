@@ -1,0 +1,72 @@
+<ion-header no-border class="header-custom">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Skeleton Loader
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item lines="none">
+      <ion-thumbnail slot="start" class="ion-margin-top">
+        <skeleton-element height="50px" width="50px" rounded="true"></skeleton-element>
+      </ion-thumbnail>
+      <ion-label>
+        <skeleton-element></skeleton-element>
+        <skeleton-element height="8px" width="67%"></skeleton-element>
+      </ion-label>
+    </ion-item>
+    <ion-card-content>
+      <skeleton-element></skeleton-element>
+      <skeleton-element></skeleton-element>
+      <skeleton-element width="67%"></skeleton-element>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <skeleton-element height="120px" noAnimated="true"></skeleton-element>
+      <skeleton-element height="24px" width="80%" style="margin-bottom: 12px"></skeleton-element>
+      <skeleton-element height="12px"></skeleton-element>
+      <skeleton-element height="12px" width="67%"></skeleton-element>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <skeleton-element height="180px"></skeleton-element>
+      <ion-row class="thumbnail-list">
+        <ion-col>
+          <skeleton-element height="60px"></skeleton-element>
+        </ion-col>
+        <ion-col>
+          <skeleton-element height="60px"></skeleton-element>
+        </ion-col>
+        <ion-col>
+          <skeleton-element height="60px"></skeleton-element>
+        </ion-col>
+        <ion-col>
+          <skeleton-element height="60px"></skeleton-element>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-list>
+      <ion-item lines="none" *ngFor="let item of [0,1,2,3,4,5,6]">
+        <ion-thumbnail slot="start" class="ion-margin-top">
+          <skeleton-element height="50px" width="50px" borderRadius="2px"></skeleton-element>
+        </ion-thumbnail>
+        <ion-label>
+          <skeleton-element></skeleton-element>
+          <skeleton-element height="8px" width="67%"></skeleton-element>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>

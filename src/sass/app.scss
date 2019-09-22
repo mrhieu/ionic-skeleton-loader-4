@@ -1,0 +1,13 @@
+.header-custom {
+  box-shadow: 0 2px 6px 0 rgba(112,125,134,0.14);
+}
+
+.toolbar-custom {
+  ion-back-button {
+    --color: var(--ion-color-medium);
+  }
+}
+
+ion-button {
+  font-weight: 700;
+}

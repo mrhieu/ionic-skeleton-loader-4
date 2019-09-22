@@ -7,14 +7,13 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
-  },
-  {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-  }
+  { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
+  { path: 'list', loadChildren: './pages/list/list.module#ListPageModule' },
+  { path: 'detail', loadChildren: './pages/detail/detail.module#DetailPageModule' },
+  { path: 'facebook', loadChildren: './pages/facebook/facebook.module#FacebookPageModule' },
+  { path: 'pinterest', loadChildren: './pages/pinterest/pinterest.module#PinterestPageModule' },
+  { path: 'notifications', loadChildren: './pages/notifications/notifications.module#NotificationsPageModule' },
+  { path: 'table', loadChildren: './pages/table/table.module#TablePageModule' }
 ];
 
 @NgModule({
